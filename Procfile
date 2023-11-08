@@ -1,1 +1,1 @@
-web: gunicorn main:app
+web: gunicorn -b 0.0.0.0:8000 -b [::1]:8000 main:app
